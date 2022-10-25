@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.countainer{
+   display: grid;
+   grid-template-rows: 100px 1fr;
+   height: 100vh;
+   background-image: url("https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-repeat: no-repeat;
+   background-size:  100vw 100vh;
+   background-position: center;
+
+}
+header{
+    display:grid;
+    grid-auto-flow: column;
+    gap:10px;
+    place-content: center;
+    padding:0.5rem;
+    align-items: center;
+    /* position:relative */
+    /* background-color: blue; */
+    background-color: rgba(255, 255, 255, 0.73);
+}
+header img{
+    width: 90px;
+    height:90px;
+    border-radius:50%;
+    /* position:absolute;
+    top:0;
+    left:50vw */
+    place-self: center;
+    justify-self: center;
+    align-self: start;
+
+}
+form{
+    display:grid;
+    place-self: center;
+    gap:15px;
+    padding:1rem;
+    -webkit-box-shadow: 0 0 10px rgb(192, 184, 184);
+    box-shadow: 0 0 10px rgb(192, 184, 184);
+    border-radius: 10px;
+    background-color:  rgba(255, 255, 255, 0.73);
+}
+form h2{
+    text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    color:#749F82;
+}
+input{
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+   /* all:unset; */
+    border: 1px solid  #749F82;
+    outline: none;
+   
+}
+input:hover{
+    outline: 1px solid #FF5858;
+    border:none;
+}
+button{
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #749F82;
+    color: white;
+}
+.error{
+    color:red;
+    font-size: 13px;
+}
+.homeMain{
+    display:grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+.enrollment{
+    display:grid;
+    place-content: center;
+    background-color: rgba(255, 255, 255, 0.834);
+    border-radius: 10px;
+    color:#749F82;
+    gap:16px;
+    padding:20px  
+}
+.enrollment img{
+    width:300px;
+    height:180px;
+    border-radius: 10px;
+}
+.aboutUs{
+    padding:3rem;
+    
+    background-color: #749F82;
+    color:white;
+    display:grid;
+    place-content: center;
+    gap:10px
+}
+.contactUs{
+    display:grid;
+    place-content: center start;
+    padding:2rem;
+    gap: 10px;
+    background-color: #FF5858;
+    color:white
+}
+.AsoutUsContennt{
+    display:grid;
+    grid-auto-flow: column;
+    gap:10px;
+
+}
+.AsoutUsContennt img{
+    width:  110px;
+    height:110px;
+    border-radius: 50%;
+
+}

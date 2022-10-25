@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.student{
+    display:grid;
+    grid-auto-flow: column;
+    height:100vh;
+    grid-template-columns: 20vw 80vw;
+    
+}
+.leftMenu{
+    display:grid;
+    place-content: start center ;
+    gap:20px;
+    padding:0.5rem;
+    box-shadow: 0 0 10px rgb(192, 184, 184);
+}
+button{
+    place-self: center;
+}
+.userInfo{
+    display:grid;
+    gap:5px;
+    padding:2rem;
+    place-content: center;
+
+}
+.userInfo img {
+    width: 90px;
+    height:90px;
+    border-radius:50%;
+}
+.news{
+    border:1px solid #FF5858;
+    position:relative;
+    height:45vh;
+    padding: 0.8rem
+}
+.information{
+    display: grid;
+    gap:5px;
+}
+.information li{
+    list-style: none;
+    justify-self: center;
+    background-color: #FF5858;
+    padding:5px;
+    border-radius: 5px;
+    color: white;
+    display:grid;
+    gap:5px;
+    place-items: center;
+    cursor: pointer;
+}
+.title{
+    position: absolute;
+    top:-10px;
+    left:2px;
+    background-color: white;
+    padding:0 3px;
+    color:#FF5858   
+}
+.description{
+    font-size: small;
+    background-color: white;
+    color:#FF5858;
+    padding: 2px;
+    border-radius: 2px;
+    width:150px;
+    word-wrap: break-word;
+}
+
+main{
+    display: grid;
+    padding:2rem;
+
+}
+main h1,.selectChild{
+    font-family: 'Tangerine', serif;
+    color:#749F82;
+}
+.classSubject{
+    display: grid;
+    position: relative;
+   
+}
+.classSubject ul{
+   list-style: none;
+   padding:10px;
+   border: 1px solid #749F82;
+   gap:5px
+}
+.main-header{
+    display:grid;
+    grid-auto-flow: column;
+    place-content:  center start ;
+    align-items: center;
+    gap:30px;
+}
+.classSubject li{
+    display: grid;
+    place-content: space-between;
+    grid-auto-flow: column;
+    background-color: aquamarine;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+}
+.message{
+    display:grid;
+    place-content: center;
+}
+.subjectInClass{
+    display:grid;
+    place-content: center;
+    border:1px solid#749F82;
+    padding: 10px;
+    position:relative;
+    margin-top: 7px;
+  
+}
+.subjectInClass li{
+    background-color: #749F82;  
+    margin-top: 5px;
+}
+.subjectName{
+    position: absolute;
+    top:-10px;
+    background-color: white;
+    color:#749F82 ;
+}
+.marks_form{
+    display:grid
+}
